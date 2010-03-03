@@ -3,5 +3,6 @@ import "classes/*.pp"
 node default {
   include sudo
   include motd
-  include johnny5
+  include johnny6
+  include srcfolder
 }

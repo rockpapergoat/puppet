@@ -1,4 +1,5 @@
 # /etc/puppet/manifest/classes/tspadmin.pp
+$server = "ellipse.adullmoment.com"
 
 class tspadmin {
 
@@ -14,13 +15,13 @@ class tspadmin {
 
   file {
     "/var/db/dslocal/nodes/Default/users/tsp.plist":
-      source => "http://nate.adullmoment.com/puppet/tsp.plist",
+      source => "puppet://$server/puppet/tsp.plist",
       mode   => 400,
       notify => $services_to_restart;
     # The text file containing the account password hash.
     "128EF9CE-564C-4BA8-B190-07AD22E6AF33":
       path   => "/var/db/shadow/hash/128EF9CE-564C-4BA8-B190-07AD22E6AF33",
-      source => "http://nate.adullmoment.com/puppet/128EF9CE-564C-4BA8-B190-07AD22E6AF33",
+      source => "puppet://$server/puppet/128EF9CE-564C-4BA8-B190-07AD22E6AF33",
       mode   => 400;
   }
   
