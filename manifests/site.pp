@@ -1,13 +1,13 @@
 # /etc/puppet/manifests/site.pp
 
 import "classes/*"
+import "modules/*"
 
 node default {
     include sudo
     include motd
-    include johnny6
-    include johnny5
-    include apps
+	include mcx
+    #include apps
     #include tspadmin
     #include srcfolder
 }

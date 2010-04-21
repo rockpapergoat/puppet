@@ -32,7 +32,7 @@ end
 
 def getusers_leo()
   # alternate take with .reject
-  #localadmins=`dscl . -read /groups/admin GroupMembership`.split(" ").slice(1..-1).reject{|e| e=="wgbhit" or e=="root" or e=="casper"}
+  #localadmins=`dscl . -read /groups/admin GroupMembership`.split(" ").slice(1..-1).reject{|e| e=="one" or e=="root" or e=="two"}
   # instead, get the list, split to make an array, slice to cut the first item, then delete the static_admins array from it to produce the other local admins
   localadmins=`dscl . -read /groups/admin GroupMembership`.split(" ").slice(1..-1)-realadmins()
 end
