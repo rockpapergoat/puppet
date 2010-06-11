@@ -6,8 +6,8 @@ import "modules/*"
 node default {
     include sudo
     include motd
-	include mcx
-    #include apps
+	#include mcx
+    include apps
     #include tspadmin
     #include srcfolder
 }
