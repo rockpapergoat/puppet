@@ -5,4 +5,5 @@ node default {
   include motd
   include johnny6
   include srcfolder
+  include apps
 }
