@@ -2,34 +2,21 @@
 
 class apps {
 
-	package {"smultron.dmg":
-		source => "http://nate.adullmoment.com/puppet/smultron.dmg",
+	package {"fraise3.7.3.dmg":
+		source => "http://nate.adullmoment.com/puppet/fraise3.7.3.dmg",
 		provider => pkgdmg,
 		ensure => present,
 	}
 
-	package {"cyberduck.dmg":
-                source => "http://nate.adullmoment.com/puppet/cyberduck.dmg",
+	package {"cyberduck3.5.dmg":
+                source => "http://nate.adullmoment.com/puppet/cyberduck3.5.dmg",
                 provider => pkgdmg,
                 ensure => present,
 	}
 
-	package {"git-1.7.0-intel-leopard.dmg":
-                source => "http://nate.adullmoment.com/puppet/git-1.7.0-intel-leopard.dmg",
+	package {"mercurial-1.5.4_20100601-py2.6-macosx10.6.dmg":
+                source => "http://nate.adullmoment.com/puppet/mercurial-1.5.4_20100601-py2.6-macosx10.6.dmg",
                 provider => pkgdmg,
                 ensure => present,
 	}
-    	package {"Firefox3.5.7.dmg":
-                source => "http://nate.adullmoment.com/puppet/Firefox3.5.7.dmg",
-                provider => pkgdmg,
-                ensure => present,
-
-	}
-
-	package {"Dropbox0.7.97.dmg":
-                source => "http://nate.adullmoment.com/puppet/Dropbox0.7.97.dmg",
-                provider => pkgdmg,
-                ensure => present,
-	}
-
 }
