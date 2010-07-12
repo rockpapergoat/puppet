@@ -4,14 +4,13 @@ import "classes/*"
 #import "modules/*"
 
 node default {
-    #include sudo
-    #include motd
+	#include sudo
+	#include motd
 	#include mcx
-    #include apps
-    #include tspadmin
-    #include srcfolder
+	#include apps
+	#include tspadmin
+	#include srcfolder
 	include folders
-	#include ssh
 	include remoteaccess
 	include remoteadmin
 	include swupd
