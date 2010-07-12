@@ -14,4 +14,5 @@ node default {
 	#include ssh
 	include remoteaccess
 	include remoteadmin
+	include swupd
 }
