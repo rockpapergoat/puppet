@@ -1,13 +1,17 @@
 # /etc/puppet/manifests/site.pp
 
 import "classes/*"
-import "modules/*"
+#import "modules/*"
 
 node default {
-    include sudo
-    include motd
+    #include sudo
+    #include motd
 	#include mcx
-    include apps
+    #include apps
     #include tspadmin
     #include srcfolder
+	include folders
+	#include ssh
+	include remoteaccess
+	include remoteadmin
 }
