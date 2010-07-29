@@ -10,8 +10,12 @@ node default {
 	#include apps
 	#include tspadmin
 	#include srcfolder
-	include folders
-	include remoteaccess
-	include remoteadmin
-	include swupd
+	#include folders
+	#include remoteaccess
+	#include remoteadmin
+	#include swupd
+	#include dumb
+	include ssh
+	include notification
+	include ident
 }
