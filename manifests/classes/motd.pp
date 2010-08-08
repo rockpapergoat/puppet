@@ -1,8 +1,8 @@
 # Adding to classes/motd.pp
-
+$tpath = '/Users/n8/tsp/_presentations/puppet/puppet_git/templates'
 class motd {
   file { "/etc/motd":
-    content => "let's get in here...\n",
+    content => template("$tpath/motd.erb"),
   }
 }
 

@@ -17,6 +17,7 @@ class ssh {
         ensure => running,
         require => File["/System/Library/LaunchDaemons/ssh.plist"],
 		subscribe => File["/etc/sshd_config"],
-		#notice('started sshd'),
+		
         }
+		notice("started sshd")
     }

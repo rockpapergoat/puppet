@@ -1,5 +1,5 @@
 user { 'morty2':
-    ensure => 'present',
+    ensure => 'absent',
     home => '/Users/morty2',
     uid => '1200',
     gid => '20',

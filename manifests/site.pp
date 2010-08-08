@@ -5,7 +5,7 @@ import "classes/*"
 
 node default {
 	#include sudo
-	#include motd
+	include motd
 	#include mcx
 	#include apps
 	#include tspadmin
@@ -15,7 +15,14 @@ node default {
 	#include remoteadmin
 	#include swupd
 	#include dumb
-	include ssh
+	#include ssh
+	#include notification
+	#include ident
+}
+
+node 'derwin.adullmoment.com' {
+	#include motd
 	include notification
-	include ident
+	include ssh
+	#include elvis
 }
