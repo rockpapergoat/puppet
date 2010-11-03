@@ -15,3 +15,4 @@ class remoteadmin {
 	  command => "/usr/bin/defaults write /Library/Preferences/com.apple.loginwindow HiddenUsersList -array remote",
 	}
 }
+#include remoteadmin

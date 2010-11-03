@@ -1,0 +1,4 @@
+let's do this...
+<%#your os version is <%= macosx_productversion %>
+<%# your ip is <%= ipaddress %>
+<%#your fqdn is <%= fqdn %>

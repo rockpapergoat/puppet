@@ -5,3 +5,4 @@ class notification {
 	}
 
 }
+#include notification

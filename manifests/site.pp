@@ -22,7 +22,10 @@ node default {
 
 node 'derwin.adullmoment.com' {
 	#include motd
-	include notification
-	include ssh
+	#include notification
+	#include sshd
+	#include check_hostname
+	include swupd
+	include host_names
 	#include elvis
 }
