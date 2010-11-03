@@ -8,6 +8,7 @@ base
 ** ssh keys
 ** hosts config (possibly)
 ** munki config
+* node definitions or point to extlookup
 
 client
 * inherits base (all)
