@@ -1,0 +1,19 @@
+puppet class, manifest outline
+
+base
+* base apps
+* default printer(s), if any
+* default hidden management account
+* conf
+** ssh keys
+** hosts config (possibly)
+** munki config
+
+client
+* inherits base (all)
+* client-specific apps (based on role or client environment, etc.)
+* client-specific config
+** unique munki config, if needed
+** unique host-specific config
+* client-specific local admin
+* directory AD binding
