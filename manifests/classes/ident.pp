@@ -5,5 +5,4 @@ class ident {
 		content => $sp_serial_number,
 		ensure => present,
 		}
-
 }

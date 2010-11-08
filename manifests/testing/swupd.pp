@@ -1,5 +1,4 @@
 # manage and/or schedule software updates
-
 class swupd {
 	exec { swupd:
 	path => ["/bin", "/usr/bin", "/usr/sbin"],
