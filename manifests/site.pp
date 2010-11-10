@@ -4,20 +4,13 @@ import "classes/*"
 #import "modules/*"
 
 node default {
-	#include sudo
+	include base
+	include apps
+	include ident
 	include motd
-	#include mcx
-	#include apps
-	#include tspadmin
-	#include srcfolder
-	#include folders
-	#include remoteaccess
-	#include remoteadmin
-	#include swupd
-	#include dumb
-	#include ssh
-	#include notification
-	#include ident
+	include remoteaccess
+	include swupd_server
+	include versioncontrol
 }
 
 node 'derwin.adullmoment.com' {
