@@ -1,0 +1,6 @@
+1/8/11, puppet notes on os x
+
+* puppet user, group are required to run
+* /var/lib/puppet should be owned by puppet:puppet
+* clean contents of /etc/puppet/ssl if master can't start due to cert mismatches
+** can probably clean just the cert in question, but it seems necessary to purge the whole thing when the master gets messed up
