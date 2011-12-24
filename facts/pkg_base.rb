@@ -10,3 +10,4 @@ facter.add("pkg_base") do
 		end
 end
 
+Facter.list.each { |fact| p "#{fact}" => Facter.value(fact)}

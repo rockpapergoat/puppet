@@ -9,7 +9,7 @@ require 'puppet'
 
 $vers = Facter.value(:macosx_productversion_major)
 
-Facter.add("swupd_catalog") do
+Facter.add("mac_swupd_catalog") do
 	if $vers == "10.6"
 		setcode do
 			$swupd_catalog = "index-leopard-snowleopard.merged-1.sucatalog"
@@ -24,7 +24,7 @@ Facter.add("swupd_catalog") do
 		end
 end
 
-Facter.add("swupdserver") do
+Facter.add("mac_swupdserver") do
   if $domain == "adullmoment.com"
       setcode do
         $swupdserver = "http://swupd.adullmoment.com:8088"
@@ -32,3 +32,5 @@ Facter.add("swupdserver") do
     end
   end
 end
+
+Facter.list.each { |fact| p "#{fact}" => Facter.value(fact)}
